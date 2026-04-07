@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Red Alert Security — Real-time rocket alert overlay for PC gamers. Never miss a siren while wearing headphones." />
+  <meta name="theme-color" content="#0a0c10" />
+  <title>Red Alert Security — Never Tab Out</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════ HEADER -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo-link">
+        <div class="logo-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M16 2L4 7V16C4 22.627 9.373 28 16 30C22.627 28 28 22.627 28 16V7L16 2Z" fill="#1a0000" stroke="#c62828" stroke-width="1.5"/>
+            <path d="M16 10V17" stroke="#c62828" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="16" cy="21.5" r="1.5" fill="#c62828"/>
+          </svg>
+        </div>
+        <span class="logo-text">Red Alert <span class="logo-accent">Security</span></span>
+      </a>
+      <nav class="header-actions" aria-label="Primary navigation">
+        <a href="https://discord.gg/" class="btn btn-discord" target="_blank" rel="noopener noreferrer">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057c.001.022.01.043.028.056a19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.201 13.201 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/>
+          </svg>
+          Join Discord
+        </a>
+        <a href="RedAlert_Setup.exe" download class="btn btn-download-header">Download</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════ HERO -->
+    <section class="hero">
+      <div class="hero-glow hero-glow-red" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-cyan" aria-hidden="true"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+
+      <div class="container hero-inner">
+
+        <!-- Left: Copy -->
+        <div class="hero-copy">
+          <div class="hero-badge">
+            <span class="badge-pulse" aria-hidden="true"></span>
+            Free &nbsp;·&nbsp; Windows &nbsp;·&nbsp; Real-time
+          </div>
+
+          <h1 class="hero-title">
+            Stay Safe.<br>
+            <span class="hero-title-red">Never Tab Out.</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Real-time alerts straight from the Home Front Command, displayed directly on your screen without lagging your game.
+          </p>
+
+          <div class="hero-cta-row">
+            <a href="RedAlert_Setup.exe" download class="btn btn-hero-download">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+              </svg>
+              Download for Windows
+            </a>
+            <span class="hero-note">Windows 10 / 11 &nbsp;·&nbsp; Free Forever</span>
+          </div>
+        </div>
+
+        <!-- Right: App Mockup -->
+        <div class="hero-mockup-wrap" aria-label="App preview" role="img">
+          <div class="mockup-halo" aria-hidden="true"></div>
+          <div class="app-mockup">
+
+            <!-- Title bar -->
+            <div class="mockup-titlebar">
+              <div class="tb-dots" aria-hidden="true">
+                <span class="tb-dot td-red"></span>
+                <span class="tb-dot td-yellow"></span>
+                <span class="tb-dot td-green"></span>
+              </div>
+              <span class="tb-title">Red Alert Security</span>
+              <span class="tb-spacer"></span>
+            </div>
+
+            <!-- Window body: content + sidebar -->
+            <div class="mockup-window">
+
+              <!-- Content area (left) -->
+              <div class="mockup-content">
+                <!-- Green status banner -->
+                <div class="m-banner">המערכת מוגנת ופעילה</div>
+
+                <!-- Status chips -->
+                <div class="m-chips">
+                  <span class="m-chip mc-blue">LIVE API</span>
+                  <span class="m-chip mc-purple">AUTO CHECK</span>
+                  <span class="m-chip mc-green">SECURE MODE</span>
+                </div>
+
+                <!-- Two setting boxes -->
+                <div class="m-boxes">
+                  <div class="m-box">
+                    <div class="m-box-title">מיקום וגודל</div>
+                    <div class="m-field"><span class="m-label">גודל:</span><span class="m-select">Medium ▾</span></div>
+                    <div class="m-field"><span class="m-label">מיקום:</span><span class="m-select">Top Right ▾</span></div>
+                    <div class="m-bar-label">Visual FX</div>
+                    <div class="m-bar"><div class="m-bar-fill cyan" style="width:86%"></div></div>
+                  </div>
+                  <div class="m-box">
+                    <div class="m-box-title">אזורי התרעה</div>
+                    <div class="m-city"><span class="m-city-x">✕</span>קרית ים</div>
+                    <div class="m-city"><span class="m-city-x">✕</span>קריית ים</div>
+                    <div class="m-city"><span class="m-city-x">✕</span>תל אביב</div>
+                  </div>
+                </div>
+
+                <!-- Tab bar -->
+                <div class="m-tabs">
+                  <span class="m-tab active">General</span>
+                  <span class="m-tab">Alerts</span>
+                  <span class="m-tab">Advanced</span>
+                </div>
+                <div class="m-tab-body">
+                  <div class="m-stat"><span class="m-stat-key">Connection:</span><span class="m-stat-val green">Connected</span></div>
+                  <div class="m-stat"><span class="m-stat-key">Last check:</span><span class="m-stat-val">21:44:07</span></div>
+                  <div class="m-stat"><span class="m-stat-key">Last error:</span><span class="m-stat-val">None</span></div>
+                </div>
+              </div>
+
+              <!-- Sidebar (right) -->
+              <div class="mockup-sidebar">
+                <div class="ms-title">RED ALERT</div>
+                <div class="ms-sub">PRO CONTROL PANEL</div>
+                <div class="ms-ver">Build v1.0.0</div>
+                <div class="ms-btn">הגדרות תצוגה</div>
+                <div class="ms-btn ms-btn-dim">UPDATE NOW</div>
+                <div class="ms-btn">בדיקת התרעה</div>
+                <hr class="ms-hr" />
+                <div class="ms-label">זמן תצוגה:</div>
+                <div class="ms-dropdown">10s ▾</div>
+                <div class="ms-spacer"></div>
+                <div class="ms-health-label">System health</div>
+                <div class="ms-bar"><div class="ms-bar-fill" style="width:92%"></div></div>
+                <div class="ms-save">שמור והפעל ברקע</div>
+              </div>
+
+            </div><!-- /mockup-window -->
+          </div><!-- /app-mockup -->
+        </div><!-- /hero-mockup-wrap -->
+
+      </div><!-- /hero-inner -->
+    </section>
+
+    <!-- ═══════════════════════════════════════════ FEATURES -->
+    <section class="features" id="features">
+      <div class="container">
+        <p class="section-eyebrow">Why Red Alert Security?</p>
+        <h2 class="section-heading">Built for gamers. Engineered for reliability.</h2>
+
+        <div class="features-grid">
+
+          <!-- Card 1 -->
+          <div class="feature-card">
+            <div class="feature-icon fi-red">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Zero Impact</h3>
+            <p class="feature-desc">Runs completely in the background. 0% lag, fully compatible with Rust, FiveM, and every other game you play.</p>
+            <div class="feature-tags">
+              <span class="f-tag">Low Memory</span>
+              <span class="f-tag">System Tray</span>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="feature-card">
+            <div class="feature-icon fi-cyan">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M16.24 7.76a6 6 0 0 1 0 8.49m-8.48-.01a6 6 0 0 1 0-8.49m11.31-2.82a10 10 0 0 1 0 14.14m-14.14 0a10 10 0 0 1 0-14.14"/>
+                <circle cx="12" cy="12" r="2"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Live Official Data</h3>
+            <p class="feature-desc">Connected directly to the official Pikud HaOref API for instant alerts the second they happen. No third-party middleman.</p>
+            <div class="feature-tags">
+              <span class="f-tag">Official API</span>
+              <span class="f-tag">~1.5s Polling</span>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="feature-card">
+            <div class="feature-icon fi-red">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/>
+                <line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/>
+                <line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/>
+                <line x1="1" y1="14" x2="7" y2="14"/><line x1="9" y1="8" x2="15" y2="8"/>
+                <line x1="17" y1="16" x2="23" y2="16"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Fully Customizable</h3>
+            <p class="feature-desc">Choose exactly where the overlay pops up, what size it is, and which cities you want to track. Total control.</p>
+            <div class="feature-tags">
+              <span class="f-tag">5 Positions</span>
+              <span class="f-tag">3 Sizes</span>
+              <span class="f-tag">City Filter</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ HOW TO INSTALL -->
+    <section class="install-section" id="install">
+      <div class="container">
+        <p class="section-eyebrow">Setup Guide</p>
+        <h2 class="section-heading">How to bypass Windows Defender</h2>
+        <p class="section-subheading">
+          Red Alert Security is an indie app, so Windows SmartScreen may flag it. This is completely normal for any unsigned application — it does not mean the file is harmful. Just follow two quick steps:
+        </p>
+
+        <div class="install-steps">
+
+          <!-- Step 1 -->
+          <div class="install-step">
+            <div class="step-num" aria-hidden="true">01</div>
+            <div class="step-body">
+              <h3 class="step-title">Click "More info" on the SmartScreen warning</h3>
+              <p class="step-desc">
+                When you launch the installer, Windows will show a blue SmartScreen dialog. <strong>Do not close it.</strong>
+                Look for the <strong>"More info"</strong> link near the bottom-left of the window and click it.
+              </p>
+
+              <!-- Windows SmartScreen mockup — Step 1 -->
+              <div class="ss-window" aria-label="Windows SmartScreen dialog mockup">
+                <div class="ss-chrome">
+                  <span class="ss-chrome-title">Windows Security</span>
+                </div>
+                <div class="ss-body">
+                  <div class="ss-header-row">
+                    <div class="ss-shield" aria-hidden="true">
+                      <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path d="M20 3L5 9V20C5 28.28 11.7 35.97 20 38C28.3 35.97 35 28.28 35 20V9L20 3Z" fill="#0050d8" stroke="#3a80ff" stroke-width="1.2"/>
+                        <path d="M20 13V22" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                        <circle cx="20" cy="27" r="2" fill="white"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <p class="ss-main-title">Windows protected your PC</p>
+                      <p class="ss-main-body">Windows Defender SmartScreen prevented an unrecognized app from starting. Running this app might put your PC at risk.</p>
+                    </div>
+                  </div>
+                  <div class="ss-fields">
+                    <div class="ss-field"><span class="ssf-key">App:</span><span class="ssf-val">RedAlert_Setup.exe</span></div>
+                    <div class="ss-field"><span class="ssf-key">Publisher:</span><span class="ssf-val">Unknown publisher</span></div>
+                  </div>
+                  <div class="ss-action-row">
+                    <button class="ss-btn-dont" tabindex="-1">Don't run</button>
+                    <div class="ss-more-info-wrap">
+                      <span class="ss-more-info">More info</span>
+                      <div class="ss-annotation">
+                        <svg width="52" height="20" viewBox="0 0 52 20" fill="none" aria-hidden="true">
+                          <circle cx="5" cy="10" r="4" fill="#ef5350"/>
+                          <path d="M9 10 H44 L38 4" stroke="#ef5350" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="ss-ann-label">Click here first</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- /ss-window -->
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="install-step">
+            <div class="step-num" aria-hidden="true">02</div>
+            <div class="step-body">
+              <h3 class="step-title">Click "Run anyway" to finish the install</h3>
+              <p class="step-desc">
+                After clicking "More info," the dialog expands to show a <strong>"Run anyway"</strong> button at the bottom.
+                Click it and the installer will launch. Setup takes under 30 seconds.
+              </p>
+
+              <!-- Windows SmartScreen mockup — Step 2 -->
+              <div class="ss-window" aria-label="Windows SmartScreen dialog after clicking More info">
+                <div class="ss-chrome">
+                  <span class="ss-chrome-title">Windows Security</span>
+                </div>
+                <div class="ss-body">
+                  <div class="ss-header-row">
+                    <div class="ss-shield" aria-hidden="true">
+                      <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path d="M20 3L5 9V20C5 28.28 11.7 35.97 20 38C28.3 35.97 35 28.28 35 20V9L20 3Z" fill="#0050d8" stroke="#3a80ff" stroke-width="1.2"/>
+                        <path d="M20 13V22" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                        <circle cx="20" cy="27" r="2" fill="white"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <p class="ss-main-title">Windows protected your PC</p>
+                      <p class="ss-main-body">Windows Defender SmartScreen prevented an unrecognized app from starting.</p>
+                    </div>
+                  </div>
+                  <div class="ss-fields">
+                    <div class="ss-field"><span class="ssf-key">App:</span><span class="ssf-val">RedAlert_Setup.exe</span></div>
+                    <div class="ss-field"><span class="ssf-key">Publisher:</span><span class="ssf-val">Unknown publisher</span></div>
+                  </div>
+                  <div class="ss-action-row">
+                    <button class="ss-btn-dont" tabindex="-1">Don't run</button>
+                    <div class="ss-run-wrap">
+                      <button class="ss-btn-run" tabindex="-1">Run anyway</button>
+                      <div class="ss-annotation">
+                        <svg width="52" height="20" viewBox="0 0 52 20" fill="none" aria-hidden="true">
+                          <circle cx="5" cy="10" r="4" fill="#ef5350"/>
+                          <path d="M9 10 H44 L38 4" stroke="#ef5350" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="ss-ann-label">Click this</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- /ss-window -->
+            </div>
+          </div>
+
+        </div><!-- /install-steps -->
+
+        <div class="install-notice">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="12" y1="8" x2="12" y2="12"/>
+            <line x1="12" y1="16" x2="12.01" y2="16"/>
+          </svg>
+          Red Alert Security is 100% open source and virus-free. The SmartScreen warning appears only because the app lacks a paid code-signing certificate, not because it is malicious.
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════ CTA BANNER -->
+    <section class="cta-section">
+      <div class="cta-glow" aria-hidden="true"></div>
+      <div class="container cta-inner">
+        <h2 class="cta-title">Ready to never miss an alert again?</h2>
+        <p class="cta-sub">One install. No setup. Runs silently in your system tray.</p>
+        <a href="RedAlert_Setup.exe" download class="btn btn-hero-download">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          Download for Windows — Free
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════ FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <a href="index.html" class="logo-link">
+          <div class="logo-icon">
+            <svg width="24" height="24" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <path d="M16 2L4 7V16C4 22.627 9.373 28 16 30C22.627 28 28 22.627 28 16V7L16 2Z" fill="#1a0000" stroke="#c62828" stroke-width="1.5"/>
+              <path d="M16 10V17" stroke="#c62828" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="16" cy="21.5" r="1.5" fill="#c62828"/>
+            </svg>
+          </div>
+          <span class="logo-text" style="font-size:0.95rem">Red Alert <span class="logo-accent">Security</span></span>
+        </a>
+        <p class="footer-tagline">Never miss an alert. Never tab out.</p>
+      </div>
+      <div class="footer-right">
+        <p class="footer-copy">© 2026 NorthCore, Inc. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="tos.html" class="footer-link">Terms of Service</a>
+          <a href="https://discord.gg/" class="footer-link" target="_blank" rel="noopener noreferrer">Discord</a>
+        </div>
+        <p class="footer-disclaimer">This is not an official IDF or Pikud HaOref product. Always use the official Home Front Command app as your primary alert source.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
